@@ -202,6 +202,7 @@ class Update(Child):
         row = self.db.cur.fetchone()
         self.entry_name.insert(0, row[1])
         self.entry_phone.insert(0, row[2])
+        self.entry_email.insert(0, row[3])
 
 class Search(tk.Toplevel):
     def __init__(self):
